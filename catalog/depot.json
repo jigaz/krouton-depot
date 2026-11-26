@@ -5,7 +5,7 @@
       "id": "shelf",
       "title": "The shelf, 1998 to 2010",
       "about": "Systems from the years when a burner was the fastest way to share software and every magazine came with a disc.",
-      "symbol": "opticaldisc"
+      "symbol": "opticaldisc.fill"
     },
     {
       "id": "odd",
@@ -17,13 +17,13 @@
       "id": "rescue",
       "title": "Fix-it discs",
       "about": "Boot a broken computer, test its memory, rescue its files, or wipe it before it leaves the house.",
-      "symbol": "cross.case"
+      "symbol": "cross.case.fill"
     },
     {
       "id": "console",
       "title": "Console homebrew",
       "about": "Open-source tools for the GameCube, Wii, Dreamcast and PlayStation: boot discs that burn on a CD-R or DVD-R, and SD-card tools for making 1:1 backups of discs you own. No games: bring your own. A Wii only reads burned DVDs with a modchip, and only on the early drive models; DVD+R discs also need their book type set to DVD-ROM, which Krouton can do.",
-      "symbol": "gamecontroller"
+      "symbol": "gamecontroller.fill"
     }
   ],
   "items": [
@@ -51,7 +51,11 @@
       "license": "Free software (mainly GPL); Ubuntu trademark",
       "homepage": "https://old-releases.ubuntu.com/releases/6.06/",
       "source": {
-        "url": "https://old-releases.ubuntu.com/releases/6.06/ubuntu-6.06.1-desktop-i386.iso"
+        "url": "https://old-releases.ubuntu.com/releases/6.06/ubuntu-6.06.2-desktop-i386.iso",
+        "fallbacks": [
+          "https://old-releases.ubuntu.com/releases/dapper/ubuntu-6.06.1-desktop-i386.iso",
+          "https://old-releases.ubuntu.com/releases/6.06.1/ubuntu-6.06.1-desktop-i386.iso"
+        ]
       },
       "boot": "El Torito (BIOS)"
     },
@@ -83,7 +87,10 @@
       "license": "GPL and other free licences",
       "homepage": "https://www.knopper.net/knoppix/index-en.html",
       "source": {
-        "url": "https://ftp.knoppix.nl/os/Linux/distr/knoppix/KNOPPIX_V9.1CD-2021-01-25-EN.iso"
+        "url": "https://ftp.uni-kl.de/pub/linux/knoppix/KNOPPIX_V9.1CD-2021-01-25-EN.iso",
+        "fallbacks": [
+          "http://ftp.knoppix.nl/os/Linux/distr/knoppix/KNOPPIX_V9.1CD-2021-01-25-EN.iso"
+        ]
       },
       "boot": "El Torito (BIOS and UEFI)"
     },
@@ -116,7 +123,11 @@
       "license": "MIT",
       "homepage": "https://www.haiku-os.org/",
       "source": {
-        "url": "https://cdn.haiku-os.org/haiku-release/r1beta5/haiku-r1beta5-x86_64-anyboot.iso"
+        "url": "https://cdn.haiku-os.org/haiku-release/r1beta5/haiku-r1beta5-x86_64-anyboot.iso",
+        "fallbacks": [
+          "https://mirrors.tnonline.net/haiku/haiku-release/r1beta5/haiku-r1beta5-x86_64-anyboot.iso",
+          "https://mirror.aarnet.edu.au/pub/haiku/r1beta5/haiku-r1beta5-x86_64-anyboot.iso"
+        ]
       },
       "boot": "El Torito (BIOS and UEFI)"
     },
@@ -142,14 +153,17 @@
     {
       "id": "puppy-4.3.1-multisession",
       "channel": "odd",
-      "title": "Puppy Linux 4.3.1: the live CD that saves itself back to the disc",
+      "title": "Puppy Linux 4.3.1 (small): the live CD that saves itself back to the disc",
       "year": 2009,
       "platform": "PC (32-bit x86)",
       "summary": "Puppy loads entirely into RAM, which frees the drive it booted from. At shutdown it can write your session back onto that same disc as a new session, holding only the files that changed. The next boot loads the latest one, until the disc is full.",
       "license": "GPL and other free licences",
       "homepage": "https://bkhome.org/archive/puppylinux/multi-puppy.htm",
       "source": {
-        "url": "https://distro.ibiblio.org/puppylinux/puppy-4.3.1/pup-431.iso"
+        "url": "https://distro.ibiblio.org/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431-small.iso",
+        "fallbacks": [
+          "https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431-small.iso"
+        ]
       },
       "boot": "El Torito (BIOS)",
       "burn": {
@@ -265,7 +279,12 @@
       "homepage": "https://www.memtest.org/",
       "source": {
         "github": "memtest86plus/memtest86plus",
-        "asset": "*64.iso.zip"
+        "asset": [
+          "mt86plus_*_x86_64.iso.zip",
+          "mt86plus_*_64.iso.zip",
+          "*x86_64*.iso*",
+          "*amd64*.iso*"
+        ]
       },
       "member": [
         "*.iso"
@@ -368,19 +387,10 @@
       "title": "DreamShell for Dreamcast",
       "year": 2024,
       "platform": "Sega Dreamcast",
-      "summary": "A small operating system for the Dreamcast with a file manager, media player and a loader for games on an SD adapter or hard disk mod. Dreamcasts made before late 2000 boot burned CD-Rs without any modification, so this is one disc away.",
+      "summary": "A small operating system for the Dreamcast with a file manager, media player and a loader for games on an SD adapter or hard disk mod. Dreamcasts made before late 2000 boot burned CD-Rs without a modchip. Its boot disc is a two-session .cdi image, which Krouton can't burn yet, so get it from the project.",
       "license": "KallistiOS licence (BSD-style)",
       "homepage": "https://github.com/DC-SWAT/DreamShell",
-      "source": {
-        "sourceforge": "dreamshell.mirror"
-      },
-      "member": [
-        "*.cdi"
-      ],
-      "burn": {
-        "media": "cd",
-        "note": "A .cdi image holds two sessions, audio then data. Krouton burns it as such."
-      }
+      "kind": "link"
     },
     {
       "id": "cleanrip",

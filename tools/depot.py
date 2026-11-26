@@ -101,7 +101,8 @@ def validate(catalog):
         if kind == "link":
             if source:
                 problems.append(f"{where}: a link item has no source")
-        elif not isinstance(source, dict) or len(source.keys() & {"url", "github", "sourceforge"}) != 1:
+        elif not isinstance(source, dict) or len(source.keys() & {"url", "github", "sourceforge"}) != 1 \
+                or set(source) - {"url", "fallbacks", "github", "asset", "sourceforge"}:
             problems.append(f"{where}: source needs exactly one of url, github or sourceforge")
         elif "github" in source and "asset" not in source:
             problems.append(f"{where}: a github source needs an asset pattern")
@@ -132,9 +133,9 @@ def request(url, method="GET", headers=None, attempts=3):
 
 
 def resolve(source):
-    """Return (download URL to publish, version label) for a catalogue source."""
+    """Return (download URLs to try in order, version label, file name or None)."""
     if "url" in source:
-        return source["url"], None
+        return [source["url"]] + source.get("fallbacks", []), None, None
     if "github" in source:
         headers = {"Accept": "application/vnd.github+json"}
         token = os.environ.get("GITHUB_TOKEN")
@@ -142,10 +143,13 @@ def resolve(source):
             headers["Authorization"] = f"Bearer {token}"
         with request(f"https://api.github.com/repos/{source['github']}/releases/latest", headers=headers) as r:
             release = json.load(r)
-        for asset in release.get("assets", []):
-            if fnmatch.fnmatch(asset["name"], source["asset"]):
-                return asset["browser_download_url"], release.get("tag_name")
-        raise LookupError(f"no asset matching {source['asset']} in {source['github']} {release.get('tag_name')}")
+        patterns = source["asset"] if isinstance(source["asset"], list) else [source["asset"]]
+        for pattern in patterns:
+            for asset in release.get("assets", []):
+                if fnmatch.fnmatch(asset["name"], pattern):
+                    return [asset["browser_download_url"]], release.get("tag_name"), asset["name"]
+        names = [a["name"] for a in release.get("assets", [])]
+        raise LookupError(f"no asset matching {patterns} in {source['github']} {release.get('tag_name')}: {names[:8]}")
     project = source["sourceforge"]
     with request(f"https://sourceforge.net/projects/{project}/files/latest/download") as r:
         final = r.geturl()
@@ -154,7 +158,7 @@ def resolve(source):
     path = urllib.parse.urlsplit(final).path
     if "/project/" not in path:
         raise LookupError(f"SourceForge sent {final}, not a file")
-    return "https://downloads.sourceforge.net" + path[path.index("/project/"):], None
+    return ["https://downloads.sourceforge.net" + path[path.index("/project/"):]], None, None
 
 
 def fetch(url, target):
@@ -249,12 +253,21 @@ def sniff(path):
 
 
 def verify_item(item, previous):
-    url, version = resolve(item["source"])
+    urls, version, asset_name = resolve(item["source"])
     with tempfile.TemporaryDirectory() as tmp:
         workdir = pathlib.Path(tmp)
         download = workdir / "download"
-        size, digest, final = fetch(url, download)
-        name = urllib.parse.unquote(pathlib.PurePosixPath(urllib.parse.urlsplit(final).path).name)
+        errors = []
+        for url in urls:
+            try:
+                size, digest, final = fetch(url, download)
+                break
+            except (urllib.error.URLError, OSError) as error:
+                errors.append(f"{url}: {error}")
+        else:
+            raise LookupError("; ".join(errors))
+        # GitHub serves assets from a storage address with a random name; keep the asset's own.
+        name = asset_name or urllib.parse.unquote(pathlib.PurePosixPath(urllib.parse.urlsplit(final).path).name)
         record = {
             "url": url,
             "file": name,

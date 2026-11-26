@@ -8,7 +8,7 @@
       "id": "shelf",
       "title": "The shelf, 1998 to 2010",
       "about": "Systems from the years when a burner was the fastest way to share software and every magazine came with a disc.",
-      "symbol": "opticaldisc"
+      "symbol": "opticaldisc.fill"
     },
     {
       "id": "odd",
@@ -20,13 +20,13 @@
       "id": "rescue",
       "title": "Fix-it discs",
       "about": "Boot a broken computer, test its memory, rescue its files, or wipe it before it leaves the house.",
-      "symbol": "cross.case"
+      "symbol": "cross.case.fill"
     },
     {
       "id": "console",
       "title": "Console homebrew",
       "about": "Open-source tools for the GameCube, Wii, Dreamcast and PlayStation: boot discs that burn on a CD-R or DVD-R, and SD-card tools for making 1:1 backups of discs you own. No games: bring your own. A Wii only reads burned DVDs with a modchip, and only on the early drive models; DVD+R discs also need their book type set to DVD-ROM, which Krouton can do.",
-      "symbol": "gamecontroller"
+      "symbol": "gamecontroller.fill"
     }
   ],
   "items": [
@@ -430,6 +430,17 @@
         "size": 33034299
       },
       "fits_on": "business-card"
+    },
+    {
+      "id": "dreamshell",
+      "channel": "console",
+      "title": "DreamShell for Dreamcast",
+      "year": 2024,
+      "platform": "Sega Dreamcast",
+      "summary": "A small operating system for the Dreamcast with a file manager, media player and a loader for games on an SD adapter or hard disk mod. Dreamcasts made before late 2000 boot burned CD-Rs without a modchip. Its boot disc is a two-session .cdi image, which Krouton can't burn yet, so get it from the project.",
+      "license": "KallistiOS licence (BSD-style)",
+      "homepage": "https://github.com/DC-SWAT/DreamShell",
+      "kind": "link"
     },
     {
       "id": "cleanrip",
