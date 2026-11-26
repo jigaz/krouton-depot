@@ -25,7 +25,7 @@
     {
       "id": "console",
       "title": "Console homebrew",
-      "about": "Open-source tools for the GameCube, Wii, Dreamcast and PlayStation: boot discs that burn on a CD-R or DVD-R, and SD-card tools for making 1:1 backups of discs you own. No games: bring your own. A Wii only reads burned DVDs with a modchip, and only on the early drive models; DVD+R discs also need their book type set to DVD-ROM, which Krouton can do.",
+      "about": "Open-source tools for the GameCube, Wii, Dreamcast and PlayStation: boot discs that burn on a CD-R or DVD-R, and SD-card tools for making 1:1 backups of discs you own. No games: bring your own. A Wii only reads burned DVDs with a modchip, and only on the early drive models; DVD+R discs would also need their book type set to DVD-ROM, which Krouton doesn't do, so use DVD-R.",
       "symbol": "gamecontroller.fill"
     }
   ],
