@@ -153,16 +153,16 @@
     {
       "id": "puppy-4.3.1-multisession",
       "channel": "odd",
-      "title": "Puppy Linux 4.3.1 (small): the live CD that saves itself back to the disc",
+      "title": "Puppy Linux 4.3.1: the live CD that saves itself back to the disc",
       "year": 2009,
       "platform": "PC (32-bit x86)",
       "summary": "Puppy loads entirely into RAM, which frees the drive it booted from. At shutdown it can write your session back onto that same disc as a new session, holding only the files that changed. The next boot loads the latest one, until the disc is full.",
       "license": "GPL and other free licences",
       "homepage": "https://bkhome.org/archive/puppylinux/multi-puppy.htm",
       "source": {
-        "url": "https://distro.ibiblio.org/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431-small.iso",
+        "url": "https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431.iso",
         "fallbacks": [
-          "https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431-small.iso"
+          "https://distro.ibiblio.org/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431.iso"
         ]
       },
       "boot": "El Torito (BIOS)",
@@ -278,12 +278,11 @@
       "license": "GPL",
       "homepage": "https://www.memtest.org/",
       "source": {
-        "github": "memtest86plus/memtest86plus",
-        "asset": [
+        "page": "https://www.memtest.org/",
+        "link": [
           "mt86plus_*_x86_64.iso.zip",
           "mt86plus_*_64.iso.zip",
-          "*x86_64*.iso*",
-          "*amd64*.iso*"
+          "mt86plus_*x86_64*.iso.zip"
         ]
       },
       "member": [

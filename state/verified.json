@@ -26,10 +26,6 @@
       "version": null
     }
   },
-  "dreamshell": {
-    "checked": "2026-11-26T11:08:51Z",
-    "problem": "LookupError: nothing in DreamShell v4.0.4 source code.zip matches ['*.cdi']"
-  },
   "dsl-4.4.10": {
     "ok": {
       "file": "dsl-4.4.10.iso",

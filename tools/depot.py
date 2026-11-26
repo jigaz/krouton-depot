@@ -104,8 +104,9 @@ def validate(catalog):
         if kind == "link":
             if source:
                 problems.append(f"{where}: a link item has no source")
-        elif not isinstance(source, dict) or len(source.keys() & {"url", "github", "sourceforge"}) != 1 \
-                or set(source) - {"url", "fallbacks", "github", "asset", "sourceforge"}:
+        elif not isinstance(source, dict) or len(source.keys() & {"url", "github", "sourceforge", "page"}) != 1 \
+                or set(source) - {"url", "fallbacks", "github", "asset", "sourceforge", "page", "link"} \
+                or ("page" in source) != ("link" in source):
             problems.append(f"{where}: source needs exactly one of url, github or sourceforge")
         elif "github" in source and "asset" not in source:
             problems.append(f"{where}: a github source needs an asset pattern")
@@ -153,6 +154,19 @@ def resolve(source):
                     return [asset["browser_download_url"]], release.get("tag_name"), asset["name"]
         names = [a["name"] for a in release.get("assets", [])]
         raise LookupError(f"no asset matching {patterns} in {source['github']} {release.get('tag_name')}: {names[:8]}")
+    if "page" in source:
+        # The project publishes its files only on its own download page: take the first link
+        # whose file name matches, in pattern order, so a new release is picked up by itself.
+        with request(source["page"]) as r:
+            base, body = r.geturl(), r.read(4 << 20).decode("utf-8", "replace")
+        links = [urllib.parse.urljoin(base, html.unescape(h)) for h in re.findall(r'href="([^"#]+)"', body)]
+        patterns = source["link"] if isinstance(source["link"], list) else [source["link"]]
+        for pattern in patterns:
+            for link in links:
+                name = urllib.parse.unquote(pathlib.PurePosixPath(urllib.parse.urlsplit(link).path).name)
+                if fnmatch.fnmatch(name, pattern):
+                    return [link] + source.get("fallbacks", []), None, name
+        raise LookupError(f"no link matching {patterns} on {source['page']}")
     project = source["sourceforge"]
     with request(f"https://sourceforge.net/projects/{project}/files/latest/download") as r:
         final = r.geturl()
