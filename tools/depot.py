@@ -40,6 +40,9 @@ DOCS = ROOT / "docs"
 FEED = DOCS / "v1/manifest.json"
 AGENT = "KroutonDepot/1 (+https://depot.krouton.app)"
 SCHEMA_URL = "https://krouton.app/schema/depot-feed/v1.json"
+# A download that takes longer than this is abandoned for the next source, so one slow mirror
+# cannot hold up the whole monthly run (a 1.5 GB image needs only ~1 MB/s to finish in time).
+DOWNLOAD_SECONDS = 25 * 60
 
 CHANNEL_KEYS = {"id", "title", "about", "symbol"}
 ITEM_KEYS = {"id", "channel", "kind", "title", "year", "era", "platform", "summary", "license",
@@ -164,9 +167,12 @@ def resolve(source):
 def fetch(url, target):
     digest = hashlib.sha256()
     size = 0
+    started = time.monotonic()
     with request(url) as response, open(target, "wb") as out:
         final = response.geturl()
         while True:
+            if time.monotonic() - started > DOWNLOAD_SECONDS:
+                raise TimeoutError(f"gave up after {DOWNLOAD_SECONDS // 60} minutes ({size:,} bytes)")
             chunk = response.read(1 << 20)
             if not chunk:
                 break
@@ -299,24 +305,33 @@ def verify_item(item, previous):
     return record
 
 
+def save_progress(state):
+    """Written after every item, so a run cut short still keeps what it checked."""
+    STATE.parent.mkdir(exist_ok=True)
+    STATE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
 def verify(catalog, only):
     state = load(STATE, {})
     failures = 0
     for item in catalog["items"]:
         if item.get("kind") == "link" or (only and item["id"] not in only):
             continue
+        print(f"...  {item['id']}", flush=True)
         try:
             record = verify_item(item, state.get(item["id"], {}).get("ok"))
             state[item["id"]] = {"ok": record}
-            print(f"ok   {item['id']}: {record['file']} {record['size']:,} bytes {record['sha256'][:16]}")
+            print(f"ok   {item['id']}: {record['file']} {record['size']:,} bytes {record['sha256'][:16]}", flush=True)
         except Exception as error:  # noqa: BLE001 - every failure is reported and recorded
             failures += 1
             entry = state.setdefault(item["id"], {})
             entry["problem"] = f"{type(error).__name__}: {error}"[:300]
             entry["checked"] = now()
-            print(f"BAD  {item['id']}: {entry['problem']}")
+            print(f"BAD  {item['id']}: {entry['problem']}", flush=True)
+            save_progress(state)
             continue
         state[item["id"]].pop("problem", None)
+        save_progress(state)
     STATE.parent.mkdir(exist_ok=True)
     STATE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"{failures} problem(s)")

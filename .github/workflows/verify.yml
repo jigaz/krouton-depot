@@ -29,11 +29,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Make room for large images
         run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc && df -h /tmp
+      # Stopped at 150 minutes so what was checked is still published; each entry is saved as
+      # it finishes, and the next run picks up the rest.
       - name: Verify
+        timeout-minutes: 150
         run: python3 tools/depot.py verify ${{ github.event.inputs.only }}
       - name: Build site and feed
+        if: ${{ !cancelled() }}
         run: python3 tools/depot.py build
       - name: Commit
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "krouton-depot-bot"
           git config user.email "krouton-depot-bot@users.noreply.github.com"
