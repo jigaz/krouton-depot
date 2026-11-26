@@ -1,7 +1,7 @@
 {
   "$schema": "https://krouton.app/schema/depot-feed/v1.json",
   "format_version": 1,
-  "generated": null,
+  "generated": "2026-11-26T11:08:54Z",
   "about": "Disc images worth burning, picked for people who remember when a CD-R was cutting-edge technology. Every image here may be freely redistributed. The depot only links to each project's own downloads; a monthly job fetches every image, records its size and SHA-256, and Krouton refuses a download that doesn't match.",
   "channels": [
     {
@@ -30,6 +30,464 @@
     }
   ],
   "items": [
+    {
+      "id": "ubuntu-4.10-warty-live",
+      "channel": "shelf",
+      "title": "Ubuntu 4.10 \"Warty Warthog\" live CD",
+      "year": 2004,
+      "platform": "PC (32-bit x86)",
+      "summary": "The first Ubuntu, released in October 2004, back when Canonical posted free pressed CDs to anyone who asked. The live CD was a separate disc from the installer, and booted to GNOME 2.8 with the brown \"Human\" theme.",
+      "license": "Free software (mainly GPL); Ubuntu trademark",
+      "homepage": "https://old-releases.ubuntu.com/releases/4.10/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS)",
+      "download": {
+        "url": "https://old-releases.ubuntu.com/releases/4.10/warty-release-live-i386.iso",
+        "file": "warty-release-live-i386.iso",
+        "size": 674152448,
+        "sha256": "189746859b539c37d978b107589610aa49a7415f7c089d22667867a918591013",
+        "verified": "2026-11-26T11:01:40Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "189746859b539c37d978b107589610aa49a7415f7c089d22667867a918591013",
+        "size": 674152448
+      },
+      "fits_on": "cd-74"
+    },
+    {
+      "id": "dsl-4.4.10",
+      "channel": "shelf",
+      "title": "Damn Small Linux 4.4.10",
+      "year": 2008,
+      "platform": "PC (486 and later)",
+      "summary": "A whole graphical desktop in about 50 MB, small enough for a business-card CD. It runs on a 486 with 16 MB of RAM, which made it the standard way to bring an old laptop back to life.",
+      "license": "GPL and other free licences",
+      "homepage": "https://www.damnsmalllinux.org/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS)",
+      "burn": {
+        "note": "Fits on a 50 MB business-card CD or an 8 cm mini CD as well as a full-size disc."
+      },
+      "download": {
+        "url": "https://distro.ibiblio.org/damnsmall/current/dsl-4.4.10.iso",
+        "file": "dsl-4.4.10.iso",
+        "size": 52328448,
+        "sha256": "6d9369c7b8fb0f23880c5ec44f5a4a2d9d628d7a1407ea83bf0b3249eda33537",
+        "verified": "2026-11-26T11:01:43Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "6d9369c7b8fb0f23880c5ec44f5a4a2d9d628d7a1407ea83bf0b3249eda33537",
+        "size": 52328448
+      },
+      "fits_on": "business-card"
+    },
+    {
+      "id": "freedos-1.4-live",
+      "channel": "shelf",
+      "title": "FreeDOS 1.4 live CD",
+      "year": 2025,
+      "platform": "PC (x86)",
+      "summary": "An open-source DOS that runs the games and utilities of the early 1990s on real hardware. The live CD boots straight to a DOS prompt, with the option to install, and comes with editors, compilers and network tools.",
+      "license": "GPL and other free licences",
+      "homepage": "https://www.freedos.org/",
+      "kind": "disc",
+      "era": 1994,
+      "boot": "El Torito (BIOS)",
+      "download": {
+        "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.4/FD14-LiveCD.zip",
+        "file": "FD14-LiveCD.zip",
+        "size": 293950337,
+        "sha256": "2020ff6bb681967fd6eff8f51ad2e5cd5ab4421165948cef4246e4f7fcaf6339",
+        "verified": "2026-11-26T11:02:34Z",
+        "archive": "zip"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "path": "FD14LIVE.iso",
+        "sha256": "c48a9dcf4b8e22f44e268a9879745f0bd88c061195ac584e6ef2deb0477f81fb",
+        "size": 316557312
+      },
+      "fits_on": "cd-74"
+    },
+    {
+      "id": "reactos-live",
+      "channel": "shelf",
+      "title": "ReactOS live CD",
+      "year": 2025,
+      "platform": "PC (32-bit x86)",
+      "summary": "An open-source operating system that aims to run Windows programs and drivers, and looks like Windows 2000 while doing it. Still alpha software, so try it in a virtual machine or a spare PC.",
+      "license": "GPL",
+      "homepage": "https://reactos.org/",
+      "kind": "disc",
+      "era": 2001,
+      "boot": "El Torito (BIOS)",
+      "download": {
+        "url": "https://downloads.sourceforge.net/project/reactos/ReactOS/0.4.16/ReactOS-0.4.16-i386.zip",
+        "file": "ReactOS-0.4.16-i386.zip",
+        "size": 198087895,
+        "sha256": "e5851510cf5b79ef51a76b8155dd5ef7faca1155f44d0a1d41c35b77ece4ce2a",
+        "verified": "2026-11-26T11:03:27Z",
+        "archive": "zip"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "path": "ReactOS-0.4.16-i386.iso",
+        "sha256": "6f15ca6e1edf5527b8489958d16c54f0da0e7948c305d7c89e74687c6cbf6855",
+        "size": 406847488
+      },
+      "fits_on": "cd-74"
+    },
+    {
+      "id": "kolibrios",
+      "channel": "odd",
+      "title": "KolibriOS",
+      "year": 2025,
+      "platform": "PC (x86)",
+      "summary": "A complete graphical operating system written in assembly language, with a desktop, web browser, games and a text editor, small enough to fit on a 1.44 MB floppy. The CD boots in a few seconds.",
+      "license": "GPL",
+      "homepage": "https://kolibrios.org/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS)",
+      "download": {
+        "url": "https://builds.kolibrios.org/en_US/latest-iso.7z",
+        "file": "latest-iso.7z",
+        "size": 46645654,
+        "sha256": "cef44851741081dcbdb9f8fcb221bdb104f3060d7d1061fabf7d7c914c0b5e03",
+        "verified": "2026-11-26T11:03:32Z",
+        "archive": "7z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "path": "kolibri.iso",
+        "sha256": "90b0fcfae1e9661fa428099bd82a1a839291deaa3c4c13c13d209a10cf7a169a",
+        "size": 99358720
+      },
+      "fits_on": "mini-cd"
+    },
+    {
+      "id": "tinycore",
+      "channel": "odd",
+      "title": "Tiny Core Linux",
+      "year": 2025,
+      "platform": "PC (x86)",
+      "summary": "A graphical Linux desktop in about 25 MB, by one of the original Damn Small Linux developers. Everything runs from RAM, and applications load as extensions only when you ask for them.",
+      "license": "GPL",
+      "homepage": "http://tinycorelinux.net/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS)",
+      "burn": {
+        "note": "Small enough for a business-card or 8 cm mini CD."
+      },
+      "download": {
+        "url": "http://tinycorelinux.net/16.x/x86/release/TinyCore-current.iso",
+        "file": "TinyCore-current.iso",
+        "size": 25165824,
+        "sha256": "f26ca71a1bb8534ebad65a5df844d6adc4aba7252910186bef8623d86855db08",
+        "verified": "2026-11-26T11:03:42Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "f26ca71a1bb8534ebad65a5df844d6adc4aba7252910186bef8623d86855db08",
+        "size": 25165824
+      },
+      "fits_on": "business-card"
+    },
+    {
+      "id": "slitaz-rolling",
+      "channel": "odd",
+      "title": "SliTaz GNU/Linux",
+      "year": 2025,
+      "platform": "PC (x86)",
+      "summary": "A complete desktop with a web browser in about 50 MB, built from scratch rather than from another distribution, and fast on machines from the early 2000s.",
+      "license": "GPL",
+      "homepage": "https://slitaz.org/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS)",
+      "download": {
+        "url": "https://download.tuxfamily.org/slitaz/iso/rolling/slitaz-rolling.iso",
+        "file": "slitaz-rolling.iso",
+        "size": 56559616,
+        "sha256": "c033bfc27c740b67155b6bf46e9453caa014116bb7bcfede9cbb4ae708e7e5c6",
+        "verified": "2026-11-26T11:03:50Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "c033bfc27c740b67155b6bf46e9453caa014116bb7bcfede9cbb4ae708e7e5c6",
+        "size": 56559616
+      },
+      "fits_on": "mini-cd"
+    },
+    {
+      "id": "systemrescue",
+      "channel": "rescue",
+      "title": "SystemRescue",
+      "year": 2025,
+      "platform": "PC (64-bit x86)",
+      "summary": "The successor to SystemRescueCD, a fixture of every technician's CD wallet since 2003. It boots to a toolkit for repairing partitions, file systems and boot loaders, with GParted, TestDisk, ddrescue and a web browser.",
+      "license": "GPL",
+      "homepage": "https://www.system-rescue.org/",
+      "kind": "disc",
+      "era": 2003,
+      "boot": "El Torito (BIOS and UEFI)",
+      "download": {
+        "url": "https://downloads.sourceforge.net/project/systemrescuecd/sysresccd-x86/13.03/systemrescue-13.03-amd64.iso",
+        "file": "systemrescue-13.03-amd64.iso",
+        "size": 1434386432,
+        "sha256": "b71b98ba6b92145524cb1a72206b9888a59861ad6fb05d127faf618ca0136891",
+        "verified": "2026-11-26T11:04:08Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "b71b98ba6b92145524cb1a72206b9888a59861ad6fb05d127faf618ca0136891",
+        "size": 1434386432
+      },
+      "fits_on": "mini-dvd"
+    },
+    {
+      "id": "gparted-live",
+      "channel": "rescue",
+      "title": "GParted Live",
+      "year": 2025,
+      "platform": "PC (64-bit x86)",
+      "summary": "Boots straight into the GParted partition editor: resize, move, copy and check partitions on a disk that isn't in use.",
+      "license": "GPL",
+      "homepage": "https://gparted.org/livecd.php",
+      "kind": "disc",
+      "boot": "El Torito (BIOS and UEFI)",
+      "download": {
+        "url": "https://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.8.1-3/gparted-live-1.8.1-3-amd64.iso",
+        "file": "gparted-live-1.8.1-3-amd64.iso",
+        "size": 649068544,
+        "sha256": "3f66b2e10b8bb2c573ed6cdd3a9b54fd0a8e7690634ab6b15c3c8f517992d1a1",
+        "verified": "2026-11-26T11:04:20Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "3f66b2e10b8bb2c573ed6cdd3a9b54fd0a8e7690634ab6b15c3c8f517992d1a1",
+        "size": 649068544
+      },
+      "fits_on": "cd-74"
+    },
+    {
+      "id": "rescuezilla",
+      "channel": "rescue",
+      "title": "Rescuezilla",
+      "year": 2025,
+      "platform": "PC (64-bit x86)",
+      "summary": "Point-and-click disk backup, restore and cloning, compatible with Clonezilla images, plus a file browser for getting files off a computer that won't boot.",
+      "license": "GPL",
+      "homepage": "https://rescuezilla.com/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS and UEFI)",
+      "download": {
+        "url": "https://github.com/rescuezilla/rescuezilla/releases/download/2.6.2/rescuezilla-2.6.2-64bit.noble.iso",
+        "file": "912e667a-1919-4241-a2ef-944a7a9026f6",
+        "size": 1594339328,
+        "sha256": "285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50",
+        "verified": "2026-11-26T11:04:29Z"
+      },
+      "version": "2.6.2",
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50",
+        "size": 1594339328
+      },
+      "fits_on": "dvd-5"
+    },
+    {
+      "id": "dban",
+      "channel": "rescue",
+      "title": "Darik's Boot and Nuke 2.3.0",
+      "year": 2015,
+      "platform": "PC (x86)",
+      "summary": "The classic way to wipe a hard disk before giving a computer away. It is unmaintained and can't securely erase SSDs; use ShredOS for modern drives.",
+      "license": "GPL",
+      "homepage": "https://sourceforge.net/projects/dban/",
+      "kind": "disc",
+      "era": 2003,
+      "boot": "El Torito (BIOS)",
+      "download": {
+        "url": "https://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso",
+        "file": "dban-2.3.0_i586.iso",
+        "size": 16719872,
+        "sha256": "7613dafc1cfc77054dcf5f7d01682d808bc31faaaacfbf3263f4887580103776",
+        "verified": "2026-11-26T11:05:33Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "7613dafc1cfc77054dcf5f7d01682d808bc31faaaacfbf3263f4887580103776",
+        "size": 16719872
+      },
+      "fits_on": "business-card"
+    },
+    {
+      "id": "shredos",
+      "channel": "rescue",
+      "title": "ShredOS",
+      "year": 2025,
+      "platform": "PC (64-bit x86)",
+      "summary": "A tiny Linux that boots straight into nwipe, the maintained successor to DBAN's wiping engine, and can wipe several disks at once.",
+      "license": "GPL",
+      "homepage": "https://github.com/PartialVolume/shredos.x86_64",
+      "kind": "disc",
+      "boot": "El Torito (BIOS and UEFI)",
+      "download": {
+        "url": "https://github.com/PartialVolume/shredos.x86_64/releases/download/v2025.11_32_x86-64_0.43.1/shredos-2025.11_32_i686_v0.43.1_20261010_lite.iso",
+        "file": "54cd5f6c-4d87-4385-8e99-d49d6881f3c7",
+        "size": 103809024,
+        "sha256": "1be31df4cd310c048a6411a98e2f544753372f5c66eb73bb75dc3225bb1e36e5",
+        "verified": "2026-11-26T11:05:35Z"
+      },
+      "version": "v2025.11_32_x86-64_0.43.1",
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "1be31df4cd310c048a6411a98e2f544753372f5c66eb73bb75dc3225bb1e36e5",
+        "size": 103809024
+      },
+      "fits_on": "mini-cd"
+    },
+    {
+      "id": "super-grub2-disk",
+      "channel": "rescue",
+      "title": "Super GRUB2 Disk",
+      "year": 2024,
+      "platform": "PC (x86, BIOS and UEFI)",
+      "summary": "Finds and boots operating systems on a computer whose boot loader is broken, so you can get in and repair it.",
+      "license": "GPL",
+      "homepage": "https://www.supergrubdisk.org/",
+      "kind": "disc",
+      "boot": "El Torito (BIOS and UEFI)",
+      "download": {
+        "url": "https://downloads.sourceforge.net/project/supergrub2/2.06s4/super_grub2_disk_2.06s4.zip",
+        "file": "super_grub2_disk_2.06s4.zip",
+        "size": 97924607,
+        "sha256": "b1a8731dd9c626cddb010c2ab45914db89e28225c8ac496d577bfe28988b0df8",
+        "verified": "2026-11-26T11:05:39Z",
+        "archive": "zip"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "path": "super_grub2_disk_2.06s4/supergrub2-classic-2.06s4-i386_pc-CD.iso",
+        "sha256": "c23fd9b7a8ac835fb18433e375e27b00c9b89e3cd82983d3e908b0445747f194",
+        "size": 10725376
+      },
+      "fits_on": "business-card"
+    },
+    {
+      "id": "swiss-gc",
+      "channel": "console",
+      "title": "Swiss for GameCube: boot disc",
+      "year": 2025,
+      "platform": "Nintendo GameCube",
+      "summary": "The all-in-one GameCube homebrew utility: it browses SD adapters, memory cards and the network, launches homebrew, and plays your own game backups with video-mode and region fixes. The boot disc image is for a GameCube with a modchip, which is what lets the console read a burned disc.",
+      "license": "GPL-2.0",
+      "homepage": "https://github.com/emukidid/swiss-gc",
+      "kind": "disc",
+      "burn": {
+        "media": "mini-dvd",
+        "note": "GameCube discs are 8 cm. Burn to an 8 cm mini DVD-R; a full-size disc doesn't fit the tray."
+      },
+      "download": {
+        "url": "https://github.com/emukidid/swiss-gc/releases/download/v0.7.0/swiss_r2174.7z",
+        "file": "c2857dab-3aaa-42e3-bef6-a23d5767c9dc",
+        "size": 6513386,
+        "sha256": "13939fa339a099695b851b10df9082b313ae2ecdcab0cfa1c594cee476f69a1e",
+        "verified": "2026-11-26T11:05:40Z"
+      },
+      "version": "v0.7.0",
+      "image": {
+        "sha256": "13939fa339a099695b851b10df9082b313ae2ecdcab0cfa1c594cee476f69a1e",
+        "size": 6513386
+      },
+      "fits_on": "mini-dvd"
+    },
+    {
+      "id": "unirom-bootdisc",
+      "channel": "console",
+      "title": "Unirom boot disc for PlayStation",
+      "year": 2024,
+      "platform": "Sony PlayStation",
+      "summary": "Custom firmware for PlayStation cheat cartridges such as the Action Replay and GameShark. The boot disc installs it onto the cartridge or a memory card without opening the console, after which the PlayStation can boot homebrew and your own backups.",
+      "license": "Free to use and share (see the project's licence)",
+      "homepage": "https://unirom.github.io/",
+      "kind": "disc",
+      "burn": {
+        "media": "cd",
+        "note": "Burn the .cue/.bin as it is, in disc-at-once mode, at a slow speed. Without a modchip, start it with FreePSXBoot from a memory card instead."
+      },
+      "download": {
+        "url": "https://github.com/JonathanDotCel/unirom8_bootdisc_and_firmware_for_ps1/releases/download/8.0.K/UNIROM_BOOTDISC_8.0.K.zip",
+        "file": "f368b423-e604-4a6b-bfa0-b7dbf41ba17d",
+        "size": 33034299,
+        "sha256": "e40d8024d033ba073f76d8177ab0df952cd8950cc07cb70f701613a75d41a37d",
+        "verified": "2026-11-26T11:05:41Z"
+      },
+      "version": "8.0.K",
+      "image": {
+        "sha256": "e40d8024d033ba073f76d8177ab0df952cd8950cc07cb70f701613a75d41a37d",
+        "size": 33034299
+      },
+      "fits_on": "business-card"
+    },
+    {
+      "id": "cleanrip",
+      "channel": "console",
+      "title": "CleanRip for Wii",
+      "year": 2023,
+      "platform": "Nintendo Wii",
+      "summary": "Makes exact 1:1 copies of your own Wii and GameCube discs onto an SD card or USB drive, checked against the Redump database. Copy it to the apps folder of an SD card and run it from the Homebrew Channel.",
+      "license": "GPL-2.0",
+      "homepage": "https://github.com/emukidid/cleanrip",
+      "kind": "files",
+      "download": {
+        "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4-gc.zip",
+        "file": "f5e58d8a-b3f8-4d2c-bcdd-3d861cd36755",
+        "size": 453982,
+        "sha256": "028fc6640ba726dc8196d44d80d427fe299e6ba2834b0037eaa5501ae517b9f0",
+        "verified": "2026-11-26T11:08:52Z"
+      },
+      "version": "2.4"
+    },
+    {
+      "id": "usbloadergx",
+      "channel": "console",
+      "title": "USB Loader GX",
+      "year": 2025,
+      "platform": "Nintendo Wii",
+      "summary": "Plays your own Wii and GameCube backups from a USB drive, with cover art, per-game settings and parental controls.",
+      "license": "GPL-3.0",
+      "homepage": "https://github.com/wiidev/usbloadergx",
+      "kind": "files",
+      "download": {
+        "url": "https://github.com/wiidev/usbloadergx/releases/download/v4.0-r1283/usbloadergx_r1283.zip",
+        "file": "fec0c3bf-5ab9-402c-bb90-43c7a980ac1c",
+        "size": 11160243,
+        "sha256": "83e3fa9e18fd715c9617125d674b4b965eddff2ee8c54f11394c0bbc04a421a2",
+        "verified": "2026-11-26T11:08:53Z"
+      },
+      "version": "v4.0-r1283"
+    },
+    {
+      "id": "open-ps2-loader",
+      "channel": "console",
+      "title": "Open PS2 Loader",
+      "year": 2025,
+      "platform": "Sony PlayStation 2",
+      "summary": "Plays your own PlayStation 2 backups from USB, the network or an internal hard disk, which spares the ageing DVD drive.",
+      "license": "AFL-3.0",
+      "homepage": "https://github.com/ps2homebrew/Open-PS2-Loader",
+      "kind": "files",
+      "download": {
+        "url": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/v1.1.0/OPNPS2LD-LANGUAGES-AND-FONTS-v1.1.0.7z",
+        "file": "451db990-28f1-4871-b945-ba7cdd45d64e",
+        "size": 2511479,
+        "sha256": "10d93f39353a870103bcd9b94b226ff51cf0cf540a16d279bcee8ee342a8af68",
+        "verified": "2026-11-26T11:08:54Z"
+      },
+      "version": "v1.1.0"
+    },
     {
       "id": "hackmii-installer",
       "channel": "console",

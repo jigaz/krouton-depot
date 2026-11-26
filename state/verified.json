@@ -1,0 +1,300 @@
+{
+  "cleanrip": {
+    "ok": {
+      "file": "f5e58d8a-b3f8-4d2c-bcdd-3d861cd36755",
+      "sha256": "028fc6640ba726dc8196d44d80d427fe299e6ba2834b0037eaa5501ae517b9f0",
+      "size": 453982,
+      "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4-gc.zip",
+      "verified": "2026-11-26T11:08:52Z",
+      "version": "2.4"
+    }
+  },
+  "dban": {
+    "ok": {
+      "file": "dban-2.3.0_i586.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "7613dafc1cfc77054dcf5f7d01682d808bc31faaaacfbf3263f4887580103776",
+        "size": 16719872
+      },
+      "sha256": "7613dafc1cfc77054dcf5f7d01682d808bc31faaaacfbf3263f4887580103776",
+      "size": 16719872,
+      "url": "https://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso",
+      "verified": "2026-11-26T11:05:33Z",
+      "version": null
+    }
+  },
+  "dreamshell": {
+    "checked": "2026-11-26T11:08:51Z",
+    "problem": "LookupError: nothing in DreamShell v4.0.4 source code.zip matches ['*.cdi']"
+  },
+  "dsl-4.4.10": {
+    "ok": {
+      "file": "dsl-4.4.10.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "6d9369c7b8fb0f23880c5ec44f5a4a2d9d628d7a1407ea83bf0b3249eda33537",
+        "size": 52328448
+      },
+      "sha256": "6d9369c7b8fb0f23880c5ec44f5a4a2d9d628d7a1407ea83bf0b3249eda33537",
+      "size": 52328448,
+      "url": "https://distro.ibiblio.org/damnsmall/current/dsl-4.4.10.iso",
+      "verified": "2026-11-26T11:01:43Z",
+      "version": null
+    }
+  },
+  "freedos-1.4-live": {
+    "ok": {
+      "archive": "zip",
+      "file": "FD14-LiveCD.zip",
+      "image": {
+        "looks_like": "iso9660",
+        "path": "FD14LIVE.iso",
+        "sha256": "c48a9dcf4b8e22f44e268a9879745f0bd88c061195ac584e6ef2deb0477f81fb",
+        "size": 316557312
+      },
+      "sha256": "2020ff6bb681967fd6eff8f51ad2e5cd5ab4421165948cef4246e4f7fcaf6339",
+      "size": 293950337,
+      "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.4/FD14-LiveCD.zip",
+      "verified": "2026-11-26T11:02:34Z",
+      "version": null
+    }
+  },
+  "gparted-live": {
+    "ok": {
+      "file": "gparted-live-1.8.1-3-amd64.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "3f66b2e10b8bb2c573ed6cdd3a9b54fd0a8e7690634ab6b15c3c8f517992d1a1",
+        "size": 649068544
+      },
+      "sha256": "3f66b2e10b8bb2c573ed6cdd3a9b54fd0a8e7690634ab6b15c3c8f517992d1a1",
+      "size": 649068544,
+      "url": "https://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.8.1-3/gparted-live-1.8.1-3-amd64.iso",
+      "verified": "2026-11-26T11:04:20Z",
+      "version": null
+    }
+  },
+  "haiku-r1-beta5": {
+    "checked": "2026-11-26T11:03:20Z",
+    "problem": "URLError: <urlopen error [Errno -2] Name or service not known>"
+  },
+  "knoppix-9.1-cd": {
+    "checked": "2026-11-26T11:02:29Z",
+    "problem": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ftp.knoppix.nl'. (_ssl.c:1081)>"
+  },
+  "kolibrios": {
+    "ok": {
+      "archive": "7z",
+      "file": "latest-iso.7z",
+      "image": {
+        "looks_like": "iso9660",
+        "path": "kolibri.iso",
+        "sha256": "90b0fcfae1e9661fa428099bd82a1a839291deaa3c4c13c13d209a10cf7a169a",
+        "size": 99358720
+      },
+      "sha256": "cef44851741081dcbdb9f8fcb221bdb104f3060d7d1061fabf7d7c914c0b5e03",
+      "size": 46645654,
+      "url": "https://builds.kolibrios.org/en_US/latest-iso.7z",
+      "verified": "2026-11-26T11:03:32Z",
+      "version": null
+    }
+  },
+  "memtest86plus": {
+    "checked": "2026-11-26T11:04:29Z",
+    "problem": "LookupError: no asset matching *64.iso.zip in memtest86plus/memtest86plus v9.00"
+  },
+  "open-ps2-loader": {
+    "ok": {
+      "file": "451db990-28f1-4871-b945-ba7cdd45d64e",
+      "sha256": "10d93f39353a870103bcd9b94b226ff51cf0cf540a16d279bcee8ee342a8af68",
+      "size": 2511479,
+      "url": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/v1.1.0/OPNPS2LD-LANGUAGES-AND-FONTS-v1.1.0.7z",
+      "verified": "2026-11-26T11:08:54Z",
+      "version": "v1.1.0"
+    }
+  },
+  "puppy-4.3.1-multisession": {
+    "checked": "2026-11-26T11:03:29Z",
+    "problem": "HTTPError: HTTP Error 404: Not Found"
+  },
+  "reactos-live": {
+    "ok": {
+      "archive": "zip",
+      "file": "ReactOS-0.4.16-i386.zip",
+      "image": {
+        "looks_like": "iso9660",
+        "path": "ReactOS-0.4.16-i386.iso",
+        "sha256": "6f15ca6e1edf5527b8489958d16c54f0da0e7948c305d7c89e74687c6cbf6855",
+        "size": 406847488
+      },
+      "sha256": "e5851510cf5b79ef51a76b8155dd5ef7faca1155f44d0a1d41c35b77ece4ce2a",
+      "size": 198087895,
+      "url": "https://downloads.sourceforge.net/project/reactos/ReactOS/0.4.16/ReactOS-0.4.16-i386.zip",
+      "verified": "2026-11-26T11:03:27Z",
+      "version": null
+    }
+  },
+  "rescuezilla": {
+    "ok": {
+      "file": "912e667a-1919-4241-a2ef-944a7a9026f6",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50",
+        "size": 1594339328
+      },
+      "sha256": "285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50",
+      "size": 1594339328,
+      "url": "https://github.com/rescuezilla/rescuezilla/releases/download/2.6.2/rescuezilla-2.6.2-64bit.noble.iso",
+      "verified": "2026-11-26T11:04:29Z",
+      "version": "2.6.2"
+    }
+  },
+  "shredos": {
+    "ok": {
+      "file": "54cd5f6c-4d87-4385-8e99-d49d6881f3c7",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "1be31df4cd310c048a6411a98e2f544753372f5c66eb73bb75dc3225bb1e36e5",
+        "size": 103809024
+      },
+      "sha256": "1be31df4cd310c048a6411a98e2f544753372f5c66eb73bb75dc3225bb1e36e5",
+      "size": 103809024,
+      "url": "https://github.com/PartialVolume/shredos.x86_64/releases/download/v2025.11_32_x86-64_0.43.1/shredos-2025.11_32_i686_v0.43.1_20261010_lite.iso",
+      "verified": "2026-11-26T11:05:35Z",
+      "version": "v2025.11_32_x86-64_0.43.1"
+    }
+  },
+  "slitaz-rolling": {
+    "ok": {
+      "file": "slitaz-rolling.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "c033bfc27c740b67155b6bf46e9453caa014116bb7bcfede9cbb4ae708e7e5c6",
+        "size": 56559616
+      },
+      "sha256": "c033bfc27c740b67155b6bf46e9453caa014116bb7bcfede9cbb4ae708e7e5c6",
+      "size": 56559616,
+      "url": "https://download.tuxfamily.org/slitaz/iso/rolling/slitaz-rolling.iso",
+      "verified": "2026-11-26T11:03:50Z",
+      "version": null
+    }
+  },
+  "super-grub2-disk": {
+    "ok": {
+      "archive": "zip",
+      "file": "super_grub2_disk_2.06s4.zip",
+      "image": {
+        "looks_like": "iso9660",
+        "path": "super_grub2_disk_2.06s4/supergrub2-classic-2.06s4-i386_pc-CD.iso",
+        "sha256": "c23fd9b7a8ac835fb18433e375e27b00c9b89e3cd82983d3e908b0445747f194",
+        "size": 10725376
+      },
+      "sha256": "b1a8731dd9c626cddb010c2ab45914db89e28225c8ac496d577bfe28988b0df8",
+      "size": 97924607,
+      "url": "https://downloads.sourceforge.net/project/supergrub2/2.06s4/super_grub2_disk_2.06s4.zip",
+      "verified": "2026-11-26T11:05:39Z",
+      "version": null
+    }
+  },
+  "swiss-gc": {
+    "ok": {
+      "file": "c2857dab-3aaa-42e3-bef6-a23d5767c9dc",
+      "image": {
+        "looks_like": null,
+        "path": null,
+        "sha256": "13939fa339a099695b851b10df9082b313ae2ecdcab0cfa1c594cee476f69a1e",
+        "size": 6513386
+      },
+      "sha256": "13939fa339a099695b851b10df9082b313ae2ecdcab0cfa1c594cee476f69a1e",
+      "size": 6513386,
+      "url": "https://github.com/emukidid/swiss-gc/releases/download/v0.7.0/swiss_r2174.7z",
+      "verified": "2026-11-26T11:05:40Z",
+      "version": "v0.7.0"
+    }
+  },
+  "systemrescue": {
+    "ok": {
+      "file": "systemrescue-13.03-amd64.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "b71b98ba6b92145524cb1a72206b9888a59861ad6fb05d127faf618ca0136891",
+        "size": 1434386432
+      },
+      "sha256": "b71b98ba6b92145524cb1a72206b9888a59861ad6fb05d127faf618ca0136891",
+      "size": 1434386432,
+      "url": "https://downloads.sourceforge.net/project/systemrescuecd/sysresccd-x86/13.03/systemrescue-13.03-amd64.iso",
+      "verified": "2026-11-26T11:04:08Z",
+      "version": null
+    }
+  },
+  "tinycore": {
+    "ok": {
+      "file": "TinyCore-current.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "f26ca71a1bb8534ebad65a5df844d6adc4aba7252910186bef8623d86855db08",
+        "size": 25165824
+      },
+      "sha256": "f26ca71a1bb8534ebad65a5df844d6adc4aba7252910186bef8623d86855db08",
+      "size": 25165824,
+      "url": "http://tinycorelinux.net/16.x/x86/release/TinyCore-current.iso",
+      "verified": "2026-11-26T11:03:42Z",
+      "version": null
+    }
+  },
+  "ubuntu-4.10-warty-live": {
+    "ok": {
+      "file": "warty-release-live-i386.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "189746859b539c37d978b107589610aa49a7415f7c089d22667867a918591013",
+        "size": 674152448
+      },
+      "sha256": "189746859b539c37d978b107589610aa49a7415f7c089d22667867a918591013",
+      "size": 674152448,
+      "url": "https://old-releases.ubuntu.com/releases/4.10/warty-release-live-i386.iso",
+      "verified": "2026-11-26T11:01:40Z",
+      "version": null
+    }
+  },
+  "ubuntu-6.06-dapper": {
+    "checked": "2026-11-26T11:01:41Z",
+    "problem": "HTTPError: HTTP Error 404: Not Found"
+  },
+  "unirom-bootdisc": {
+    "ok": {
+      "file": "f368b423-e604-4a6b-bfa0-b7dbf41ba17d",
+      "image": {
+        "looks_like": null,
+        "path": null,
+        "sha256": "e40d8024d033ba073f76d8177ab0df952cd8950cc07cb70f701613a75d41a37d",
+        "size": 33034299
+      },
+      "sha256": "e40d8024d033ba073f76d8177ab0df952cd8950cc07cb70f701613a75d41a37d",
+      "size": 33034299,
+      "url": "https://github.com/JonathanDotCel/unirom8_bootdisc_and_firmware_for_ps1/releases/download/8.0.K/UNIROM_BOOTDISC_8.0.K.zip",
+      "verified": "2026-11-26T11:05:41Z",
+      "version": "8.0.K"
+    }
+  },
+  "usbloadergx": {
+    "ok": {
+      "file": "fec0c3bf-5ab9-402c-bb90-43c7a980ac1c",
+      "sha256": "83e3fa9e18fd715c9617125d674b4b965eddff2ee8c54f11394c0bbc04a421a2",
+      "size": 11160243,
+      "url": "https://github.com/wiidev/usbloadergx/releases/download/v4.0-r1283/usbloadergx_r1283.zip",
+      "verified": "2026-11-26T11:08:53Z",
+      "version": "v4.0-r1283"
+    }
+  }
+}
