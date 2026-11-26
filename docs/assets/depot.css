@@ -1,0 +1,10 @@
+/* Depot additions to the shared Krouton stylesheet (site.css). */
+.channels { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin: 1.6rem 0 0.6rem; font-family: var(--head); }
+main > section { margin-top: 3.2rem; }
+.item { border-top: 1px solid var(--hairline); padding: 1.4rem 0 0.6rem; max-width: var(--measure); }
+.item h3 { margin: 0 0 0.4rem; }
+.item .facts { margin: 0.8rem 0; }
+.item .kind, .item .burn-note { font-style: italic; color: var(--ink-soft); }
+.item .links { font-family: var(--head); }
+.item .checksum { font-size: 0.85rem; color: var(--ink-soft); overflow-wrap: anywhere; }
+.item .checksum code { font-size: 0.82rem; }

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://krouton.app/schema/depot-feed/v1.json",
+  "format_version": 1,
+  "generated": null,
+  "about": "Disc images worth burning, picked for people who remember when a CD-R was cutting-edge technology. Every image here may be freely redistributed. The depot only links to each project's own downloads; a monthly job fetches every image, records its size and SHA-256, and Krouton refuses a download that doesn't match.",
+  "channels": [
+    {
+      "id": "shelf",
+      "title": "The shelf, 1998 to 2010",
+      "about": "Systems from the years when a burner was the fastest way to share software and every magazine came with a disc.",
+      "symbol": "opticaldisc"
+    },
+    {
+      "id": "odd",
+      "title": "Strange and wonderful",
+      "about": "Tiny systems, whole operating systems written in assembly, and a Linux that saves itself back onto the disc it booted from.",
+      "symbol": "sparkles"
+    },
+    {
+      "id": "rescue",
+      "title": "Fix-it discs",
+      "about": "Boot a broken computer, test its memory, rescue its files, or wipe it before it leaves the house.",
+      "symbol": "cross.case"
+    },
+    {
+      "id": "console",
+      "title": "Console homebrew",
+      "about": "Open-source tools for the GameCube, Wii, Dreamcast and PlayStation: boot discs that burn on a CD-R or DVD-R, and SD-card tools for making 1:1 backups of discs you own. No games: bring your own. A Wii only reads burned DVDs with a modchip, and only on the early drive models; DVD+R discs also need their book type set to DVD-ROM, which Krouton can do.",
+      "symbol": "gamecontroller"
+    }
+  ],
+  "items": [
+    {
+      "id": "hackmii-installer",
+      "channel": "console",
+      "title": "The Homebrew Channel (HackMii Installer)",
+      "year": 2008,
+      "platform": "Nintendo Wii",
+      "summary": "Where Wii homebrew starts: it installs the Homebrew Channel and BootMii, from which CleanRip and USB Loader GX run. The installer is free but its authors only offer it from their own site.",
+      "license": "Free to use; redistribution not permitted",
+      "homepage": "https://bootmii.org/",
+      "kind": "link"
+    },
+    {
+      "id": "wiimms-iso-tools",
+      "channel": "console",
+      "title": "Wiimms ISO Tools (wit)",
+      "year": 2024,
+      "platform": "macOS, Linux and Windows",
+      "summary": "Command-line tools for checking, converting and extracting Wii and GameCube images: ISO, WBFS, CISO and more. Useful for checking a dump before burning or copying it.",
+      "license": "GPL-2.0",
+      "homepage": "https://wit.wiimm.de/",
+      "kind": "link"
+    }
+  ]
+}

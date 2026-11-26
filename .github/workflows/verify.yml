@@ -1,0 +1,44 @@
+name: Verify downloads
+# Monthly, and whenever the catalogue changes: download every image, record its size and
+# SHA-256, rebuild the site and feed, and commit the result.
+on:
+  schedule:
+    - cron: "41 9 7 * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Item ids to verify (space separated); empty means all"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths: ["catalog/**", "tools/**"]
+permissions:
+  contents: write
+concurrency:
+  group: verify
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      PYTHONUNBUFFERED: "1"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make room for large images
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc && df -h /tmp
+      - name: Verify
+        run: python3 tools/depot.py verify ${{ github.event.inputs.only }}
+      - name: Build site and feed
+        run: python3 tools/depot.py build
+      - name: Commit
+        run: |
+          git config user.name "krouton-depot-bot"
+          git config user.email "krouton-depot-bot@users.noreply.github.com"
+          git add state docs
+          git diff --cached --quiet && exit 0
+          git commit -m "Verified downloads $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push
