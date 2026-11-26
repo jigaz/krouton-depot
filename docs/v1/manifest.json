@@ -1,7 +1,7 @@
 {
   "$schema": "https://krouton.app/schema/depot-feed/v1.json",
   "format_version": 1,
-  "generated": "2026-11-26T13:18:46Z",
+  "generated": "2026-11-26T13:42:56Z",
   "about": "Disc images worth burning, picked for people who remember when a CD-R was cutting-edge technology. Every image here may be freely redistributed. The depot only links to each project's own downloads; a monthly job fetches every image, records its size and SHA-256, and Krouton refuses a download that doesn't match.",
   "channels": [
     {
@@ -46,7 +46,7 @@
         "file": "warty-release-live-i386.iso",
         "size": 674152448,
         "sha256": "189746859b539c37d978b107589610aa49a7415f7c089d22667867a918591013",
-        "verified": "2026-11-26T13:13:30Z"
+        "verified": "2026-11-26T13:29:45Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -71,7 +71,7 @@
         "file": "ubuntu-6.06.1-desktop-i386.iso",
         "size": 732336128,
         "sha256": "4eb6c5d66972670f784d6f25d336017b5a85606fbad86b0c7abd67a5d5865391",
-        "verified": "2026-11-26T13:13:38Z"
+        "verified": "2026-11-26T13:29:52Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -99,7 +99,7 @@
         "file": "dsl-4.4.10.iso",
         "size": 52328448,
         "sha256": "6d9369c7b8fb0f23880c5ec44f5a4a2d9d628d7a1407ea83bf0b3249eda33537",
-        "verified": "2026-11-26T13:13:40Z"
+        "verified": "2026-11-26T13:29:55Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -125,7 +125,7 @@
         "file": "KNOPPIX_V9.1CD-2021-01-25-EN.iso",
         "size": 700448768,
         "sha256": "d9f2c6a2e99bba5ed0ec7a01c830b3bb8c5bfcde73024f753b1a14ad7cb49fc4",
-        "verified": "2026-11-26T13:14:53Z"
+        "verified": "2026-11-26T13:31:05Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -151,7 +151,7 @@
         "file": "FD14-LiveCD.zip",
         "size": 293950337,
         "sha256": "2020ff6bb681967fd6eff8f51ad2e5cd5ab4421165948cef4246e4f7fcaf6339",
-        "verified": "2026-11-26T13:14:58Z",
+        "verified": "2026-11-26T13:31:09Z",
         "archive": "zip"
       },
       "image": {
@@ -179,7 +179,7 @@
         "file": "haiku-r1beta5-x86_64-anyboot.iso",
         "size": 1477246976,
         "sha256": "22ae312a38e98083718b6984186e753d15806bd6ea44542144fdcef42c4dcb69",
-        "verified": "2026-11-26T13:16:45Z"
+        "verified": "2026-11-26T13:32:49Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -205,7 +205,7 @@
         "file": "ReactOS-0.4.16-i386.zip",
         "size": 198087895,
         "sha256": "e5851510cf5b79ef51a76b8155dd5ef7faca1155f44d0a1d41c35b77ece4ce2a",
-        "verified": "2026-11-26T13:16:47Z",
+        "verified": "2026-11-26T13:41:36Z",
         "archive": "zip"
       },
       "image": {
@@ -215,6 +215,35 @@
         "size": 406847488
       },
       "fits_on": "cd-74"
+    },
+    {
+      "id": "puppy-4.3.1-multisession",
+      "channel": "odd",
+      "title": "Puppy Linux 4.3.1: the live CD that saves itself back to the disc",
+      "year": 2009,
+      "platform": "PC (32-bit x86)",
+      "summary": "Puppy loads entirely into RAM, which frees the drive it booted from. At shutdown it can write your session back onto that same disc as a new session, holding only the files that changed. The next boot loads the latest one, until the disc is full.",
+      "license": "GPL and other free licences",
+      "homepage": "https://bkhome.org/archive/puppylinux/multi-puppy.htm",
+      "kind": "disc",
+      "boot": "El Torito (BIOS)",
+      "burn": {
+        "leave_open": true,
+        "note": "Burn it with the disc left open for more sessions, or Puppy can't write back to it. DVD-R and DVD+R work best: each CD session wastes about 14 MB. On a rewritable disc, use a full erase to clear it, because a quick erase doesn't remove the old sessions properly."
+      },
+      "download": {
+        "url": "https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431.iso",
+        "file": "pup-431.iso",
+        "size": 110043136,
+        "sha256": "6a8fcd8ca62e693d8008412413ceeb885a30b7b8a1209809e36efd7a1cb223bb",
+        "verified": "2026-11-26T13:41:39Z"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "sha256": "6a8fcd8ca62e693d8008412413ceeb885a30b7b8a1209809e36efd7a1cb223bb",
+        "size": 110043136
+      },
+      "fits_on": "mini-cd"
     },
     {
       "id": "kolibrios",
@@ -232,7 +261,7 @@
         "file": "latest-iso.7z",
         "size": 46645654,
         "sha256": "cef44851741081dcbdb9f8fcb221bdb104f3060d7d1061fabf7d7c914c0b5e03",
-        "verified": "2026-11-26T13:16:54Z",
+        "verified": "2026-11-26T13:41:43Z",
         "archive": "7z"
       },
       "image": {
@@ -262,7 +291,7 @@
         "file": "TinyCore-current.iso",
         "size": 25165824,
         "sha256": "f26ca71a1bb8534ebad65a5df844d6adc4aba7252910186bef8623d86855db08",
-        "verified": "2026-11-26T13:16:59Z"
+        "verified": "2026-11-26T13:41:52Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -287,7 +316,7 @@
         "file": "slitaz-rolling.iso",
         "size": 56559616,
         "sha256": "c033bfc27c740b67155b6bf46e9453caa014116bb7bcfede9cbb4ae708e7e5c6",
-        "verified": "2026-11-26T13:17:06Z"
+        "verified": "2026-11-26T13:42:00Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -313,7 +342,7 @@
         "file": "systemrescue-13.03-amd64.iso",
         "size": 1434386432,
         "sha256": "b71b98ba6b92145524cb1a72206b9888a59861ad6fb05d127faf618ca0136891",
-        "verified": "2026-11-26T13:17:43Z"
+        "verified": "2026-11-26T13:42:20Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -338,7 +367,7 @@
         "file": "gparted-live-1.8.1-3-amd64.iso",
         "size": 649068544,
         "sha256": "3f66b2e10b8bb2c573ed6cdd3a9b54fd0a8e7690634ab6b15c3c8f517992d1a1",
-        "verified": "2026-11-26T13:18:05Z"
+        "verified": "2026-11-26T13:42:31Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -363,7 +392,7 @@
         "file": "rescuezilla-2.6.2-64bit.noble.iso",
         "size": 1594339328,
         "sha256": "285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50",
-        "verified": "2026-11-26T13:18:35Z"
+        "verified": "2026-11-26T13:42:39Z"
       },
       "version": "2.6.2",
       "image": {
@@ -372,6 +401,34 @@
         "size": 1594339328
       },
       "fits_on": "dvd-5"
+    },
+    {
+      "id": "memtest86plus",
+      "channel": "rescue",
+      "title": "Memtest86+",
+      "year": 2025,
+      "platform": "PC (64-bit x86)",
+      "summary": "The memory tester that has been diagnosing random crashes since 2004. Version 7 boots on UEFI computers and current DDR5 hardware.",
+      "license": "GPL",
+      "homepage": "https://www.memtest.org/",
+      "kind": "disc",
+      "era": 2004,
+      "boot": "El Torito (BIOS and UEFI)",
+      "download": {
+        "url": "https://www.memtest.org/download/v9.00/mt86plus_9.00_x86_64.iso.zip",
+        "file": "mt86plus_9.00_x86_64.iso.zip",
+        "size": 311796,
+        "sha256": "55d378c0d7d2e1a99edb6a1ff4bd5c78c179801b1f7cfe5893786c397bc19702",
+        "verified": "2026-11-26T13:42:41Z",
+        "archive": "zip"
+      },
+      "image": {
+        "looks_like": "iso9660",
+        "path": "memtest.iso",
+        "sha256": "b9aacd5a9bff97ebc9ef69856e0feac7c8fe10f3300d180c1a1684612acd4651",
+        "size": 6256640
+      },
+      "fits_on": "business-card"
     },
     {
       "id": "dban",
@@ -390,7 +447,7 @@
         "file": "dban-2.3.0_i586.iso",
         "size": 16719872,
         "sha256": "7613dafc1cfc77054dcf5f7d01682d808bc31faaaacfbf3263f4887580103776",
-        "verified": "2026-11-26T13:18:37Z"
+        "verified": "2026-11-26T13:42:42Z"
       },
       "image": {
         "looks_like": "iso9660",
@@ -415,7 +472,7 @@
         "file": "shredos-2025.11_32_i686_v0.43.1_20261010_lite.iso",
         "size": 103809024,
         "sha256": "1be31df4cd310c048a6411a98e2f544753372f5c66eb73bb75dc3225bb1e36e5",
-        "verified": "2026-11-26T13:18:40Z"
+        "verified": "2026-11-26T13:42:43Z"
       },
       "version": "v2025.11_32_x86-64_0.43.1",
       "image": {
@@ -441,7 +498,7 @@
         "file": "super_grub2_disk_2.06s4.zip",
         "size": 97924607,
         "sha256": "b1a8731dd9c626cddb010c2ab45914db89e28225c8ac496d577bfe28988b0df8",
-        "verified": "2026-11-26T13:18:42Z",
+        "verified": "2026-11-26T13:42:53Z",
         "archive": "zip"
       },
       "image": {
@@ -471,7 +528,7 @@
         "file": "swiss_r2174.7z",
         "size": 6513386,
         "sha256": "13939fa339a099695b851b10df9082b313ae2ecdcab0cfa1c594cee476f69a1e",
-        "verified": "2026-11-26T13:18:43Z",
+        "verified": "2026-11-26T13:42:53Z",
         "archive": "7z"
       },
       "version": "v0.7.0",
@@ -502,7 +559,7 @@
         "file": "UNIROM_BOOTDISC_8.0.K.zip",
         "size": 33034299,
         "sha256": "e40d8024d033ba073f76d8177ab0df952cd8950cc07cb70f701613a75d41a37d",
-        "verified": "2026-11-26T13:18:44Z",
+        "verified": "2026-11-26T13:42:54Z",
         "archive": "zip"
       },
       "version": "8.0.K",
@@ -542,7 +599,7 @@
         "file": "CleanRip-v2.4-gc.zip",
         "size": 453982,
         "sha256": "028fc6640ba726dc8196d44d80d427fe299e6ba2834b0037eaa5501ae517b9f0",
-        "verified": "2026-11-26T13:18:45Z",
+        "verified": "2026-11-26T13:42:55Z",
         "archive": "zip"
       },
       "version": "2.4"
@@ -562,7 +619,7 @@
         "file": "usbloadergx_r1283.zip",
         "size": 11160243,
         "sha256": "83e3fa9e18fd715c9617125d674b4b965eddff2ee8c54f11394c0bbc04a421a2",
-        "verified": "2026-11-26T13:18:45Z",
+        "verified": "2026-11-26T13:42:55Z",
         "archive": "zip"
       },
       "version": "v4.0-r1283"
@@ -582,7 +639,7 @@
         "file": "OPNPS2LD-LANGUAGES-AND-FONTS-v1.1.0.7z",
         "size": 2511479,
         "sha256": "10d93f39353a870103bcd9b94b226ff51cf0cf540a16d279bcee8ee342a8af68",
-        "verified": "2026-11-26T13:18:46Z",
+        "verified": "2026-11-26T13:42:56Z",
         "archive": "7z"
       },
       "version": "v1.1.0"

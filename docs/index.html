@@ -26,7 +26,7 @@
   <main>
     <h1>Disc images worth burning</h1>
     <p class="lede">Disc images worth burning, picked for people who remember when a CD-R was cutting-edge technology. Every image here may be freely redistributed. The depot only links to each project&#x27;s own downloads; a monthly job fetches every image, records its size and SHA-256, and Krouton refuses a download that doesn&#x27;t match.</p>
-    <p>18 disc images, checked 2026-11-26. Krouton shows the same list in its Disc Image Depot; the feed is at <a href="/v1/manifest.json">/v1/manifest.json</a> (<a href="https://krouton.app/schema/depot-feed/v1.json">format</a>).</p>
+    <p>20 disc images, checked 2026-11-26. Krouton shows the same list in its Disc Image Depot; the feed is at <a href="/v1/manifest.json">/v1/manifest.json</a> (<a href="https://krouton.app/schema/depot-feed/v1.json">format</a>).</p>
     <nav class="channels" aria-label="Sections">
       <a href="#shelf">The shelf, 1998 to 2010</a>
       <a href="#odd">Strange and wonderful</a>
@@ -139,6 +139,21 @@
   <section id="odd">
     <h2>Strange and wonderful</h2>
     <p class="lede">Tiny systems, whole operating systems written in assembly, and a Linux that saves itself back onto the disc it booted from.</p>
+    <article class="item" id="puppy-4.3.1-multisession">
+      <h3>Puppy Linux 4.3.1: the live CD that saves itself back to the disc</h3>
+      <p>Puppy loads entirely into RAM, which frees the drive it booted from. At shutdown it can write your session back onto that same disc as a new session, holding only the files that changed. The next boot loads the latest one, until the disc is full.</p>
+      
+      <p class="burn-note">Burn it with the disc left open for more sessions, or Puppy can&#x27;t write back to it. DVD-R and DVD+R work best: each CD session wastes about 14 MB. On a rewritable disc, use a full erase to clear it, because a quick erase doesn&#x27;t remove the old sessions properly.</p>
+      <dl class="facts">
+        <dt>Platform</dt><dd>PC (32-bit x86)</dd>
+        <dt>Released</dt><dd>2009</dd>
+        <dt>Fits on</dt><dd>8 cm mini CD (185 MB)</dd>
+        <dt>Image</dt><dd>110.0 MB</dd>
+        <dt>Licence</dt><dd>GPL and other free licences</dd>
+      </dl>
+      <p class="links"><a href="https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431.iso">Download pup-431.iso</a> · <a href="https://bkhome.org/archive/puppylinux/multi-puppy.htm">Project site</a></p>
+      <p class="checksum">SHA-256 of the download: <code>6a8fcd8ca62e693d8008412413ceeb885a30b7b8a1209809e36efd7a1cb223bb</code><br>Last fetched and checked 2026-11-26.</p>
+    </article>
     <article class="item" id="kolibrios">
       <h3>KolibriOS</h3>
       <p>A complete graphical operating system written in assembly language, with a desktop, web browser, games and a text editor, small enough to fit on a 1.44 MB floppy. The CD boots in a few seconds.</p>
@@ -228,6 +243,20 @@
       </dl>
       <p class="links"><a href="https://github.com/rescuezilla/rescuezilla/releases/download/2.6.2/rescuezilla-2.6.2-64bit.noble.iso">Download rescuezilla-2.6.2-64bit.noble.iso</a> · <a href="https://rescuezilla.com/">Project site</a></p>
       <p class="checksum">SHA-256 of the download: <code>285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50</code><br>Last fetched and checked 2026-11-26.</p>
+    </article>
+    <article class="item" id="memtest86plus">
+      <h3>Memtest86+</h3>
+      <p>The memory tester that has been diagnosing random crashes since 2004. Version 7 boots on UEFI computers and current DDR5 hardware.</p>
+      
+      <dl class="facts">
+        <dt>Platform</dt><dd>PC (64-bit x86)</dd>
+        <dt>Released</dt><dd>2025 (project dates from 2004)</dd>
+        <dt>Fits on</dt><dd>50 MB business-card CD</dd>
+        <dt>Image</dt><dd>6.3 MB</dd>
+        <dt>Licence</dt><dd>GPL</dd>
+      </dl>
+      <p class="links"><a href="https://www.memtest.org/download/v9.00/mt86plus_9.00_x86_64.iso.zip">Download mt86plus_9.00_x86_64.iso.zip</a> · <a href="https://www.memtest.org/">Project site</a></p>
+      <p class="checksum">SHA-256 of the download: <code>55d378c0d7d2e1a99edb6a1ff4bd5c78c179801b1f7cfe5893786c397bc19702</code><br>Last fetched and checked 2026-11-26.</p>
     </article>
     <article class="item" id="dban">
       <h3>Darik&#x27;s Boot and Nuke 2.3.0</h3>

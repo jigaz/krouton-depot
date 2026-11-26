@@ -6,7 +6,7 @@
       "sha256": "028fc6640ba726dc8196d44d80d427fe299e6ba2834b0037eaa5501ae517b9f0",
       "size": 453982,
       "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4-gc.zip",
-      "verified": "2026-11-26T13:18:45Z",
+      "verified": "2026-11-26T13:42:55Z",
       "version": "2.4"
     }
   },
@@ -22,7 +22,7 @@
       "sha256": "7613dafc1cfc77054dcf5f7d01682d808bc31faaaacfbf3263f4887580103776",
       "size": 16719872,
       "url": "https://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso",
-      "verified": "2026-11-26T13:18:37Z",
+      "verified": "2026-11-26T13:42:42Z",
       "version": null
     }
   },
@@ -38,7 +38,7 @@
       "sha256": "6d9369c7b8fb0f23880c5ec44f5a4a2d9d628d7a1407ea83bf0b3249eda33537",
       "size": 52328448,
       "url": "https://distro.ibiblio.org/damnsmall/current/dsl-4.4.10.iso",
-      "verified": "2026-11-26T13:13:40Z",
+      "verified": "2026-11-26T13:29:55Z",
       "version": null
     }
   },
@@ -55,7 +55,7 @@
       "sha256": "2020ff6bb681967fd6eff8f51ad2e5cd5ab4421165948cef4246e4f7fcaf6339",
       "size": 293950337,
       "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.4/FD14-LiveCD.zip",
-      "verified": "2026-11-26T13:14:58Z",
+      "verified": "2026-11-26T13:31:09Z",
       "version": null
     }
   },
@@ -71,7 +71,7 @@
       "sha256": "3f66b2e10b8bb2c573ed6cdd3a9b54fd0a8e7690634ab6b15c3c8f517992d1a1",
       "size": 649068544,
       "url": "https://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.8.1-3/gparted-live-1.8.1-3-amd64.iso",
-      "verified": "2026-11-26T13:18:05Z",
+      "verified": "2026-11-26T13:42:31Z",
       "version": null
     }
   },
@@ -87,7 +87,7 @@
       "sha256": "22ae312a38e98083718b6984186e753d15806bd6ea44542144fdcef42c4dcb69",
       "size": 1477246976,
       "url": "https://mirrors.tnonline.net/haiku/haiku-release/r1beta5/haiku-r1beta5-x86_64-anyboot.iso",
-      "verified": "2026-11-26T13:16:45Z",
+      "verified": "2026-11-26T13:32:49Z",
       "version": null
     }
   },
@@ -103,7 +103,7 @@
       "sha256": "d9f2c6a2e99bba5ed0ec7a01c830b3bb8c5bfcde73024f753b1a14ad7cb49fc4",
       "size": 700448768,
       "url": "http://ftp.knoppix.nl/os/Linux/distr/knoppix/KNOPPIX_V9.1CD-2021-01-25-EN.iso",
-      "verified": "2026-11-26T13:14:53Z",
+      "verified": "2026-11-26T13:31:05Z",
       "version": null
     }
   },
@@ -120,13 +120,26 @@
       "sha256": "cef44851741081dcbdb9f8fcb221bdb104f3060d7d1061fabf7d7c914c0b5e03",
       "size": 46645654,
       "url": "https://builds.kolibrios.org/en_US/latest-iso.7z",
-      "verified": "2026-11-26T13:16:54Z",
+      "verified": "2026-11-26T13:41:43Z",
       "version": null
     }
   },
   "memtest86plus": {
-    "checked": "2026-11-26T13:18:36Z",
-    "problem": "LookupError: no asset matching ['mt86plus_*_x86_64.iso.zip', 'mt86plus_*_64.iso.zip', '*x86_64*.iso*', '*amd64*.iso*'] in memtest86plus/memtest86plus v9.00: []"
+    "ok": {
+      "archive": "zip",
+      "file": "mt86plus_9.00_x86_64.iso.zip",
+      "image": {
+        "looks_like": "iso9660",
+        "path": "memtest.iso",
+        "sha256": "b9aacd5a9bff97ebc9ef69856e0feac7c8fe10f3300d180c1a1684612acd4651",
+        "size": 6256640
+      },
+      "sha256": "55d378c0d7d2e1a99edb6a1ff4bd5c78c179801b1f7cfe5893786c397bc19702",
+      "size": 311796,
+      "url": "https://www.memtest.org/download/v9.00/mt86plus_9.00_x86_64.iso.zip",
+      "verified": "2026-11-26T13:42:41Z",
+      "version": null
+    }
   },
   "open-ps2-loader": {
     "ok": {
@@ -135,13 +148,25 @@
       "sha256": "10d93f39353a870103bcd9b94b226ff51cf0cf540a16d279bcee8ee342a8af68",
       "size": 2511479,
       "url": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/v1.1.0/OPNPS2LD-LANGUAGES-AND-FONTS-v1.1.0.7z",
-      "verified": "2026-11-26T13:18:46Z",
+      "verified": "2026-11-26T13:42:56Z",
       "version": "v1.1.0"
     }
   },
   "puppy-4.3.1-multisession": {
-    "checked": "2026-11-26T13:16:50Z",
-    "problem": "LookupError: https://distro.ibiblio.org/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431-small.iso: HTTP Error 404: Not Found; https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431-small.iso: HTTP Error 404: Not Found"
+    "ok": {
+      "file": "pup-431.iso",
+      "image": {
+        "looks_like": "iso9660",
+        "path": null,
+        "sha256": "6a8fcd8ca62e693d8008412413ceeb885a30b7b8a1209809e36efd7a1cb223bb",
+        "size": 110043136
+      },
+      "sha256": "6a8fcd8ca62e693d8008412413ceeb885a30b7b8a1209809e36efd7a1cb223bb",
+      "size": 110043136,
+      "url": "https://mirror.vcu.edu/pub/gnu_linux/puppylinux/puppy-2_%26_3_%26_4/puppy-4.3.1/pup-431.iso",
+      "verified": "2026-11-26T13:41:39Z",
+      "version": null
+    }
   },
   "reactos-live": {
     "ok": {
@@ -156,7 +181,7 @@
       "sha256": "e5851510cf5b79ef51a76b8155dd5ef7faca1155f44d0a1d41c35b77ece4ce2a",
       "size": 198087895,
       "url": "https://downloads.sourceforge.net/project/reactos/ReactOS/0.4.16/ReactOS-0.4.16-i386.zip",
-      "verified": "2026-11-26T13:16:47Z",
+      "verified": "2026-11-26T13:41:36Z",
       "version": null
     }
   },
@@ -172,7 +197,7 @@
       "sha256": "285db0af83213e2297490ca1cfd74ecd607c3b0a2f1d14e11a8412c0b71eea50",
       "size": 1594339328,
       "url": "https://github.com/rescuezilla/rescuezilla/releases/download/2.6.2/rescuezilla-2.6.2-64bit.noble.iso",
-      "verified": "2026-11-26T13:18:35Z",
+      "verified": "2026-11-26T13:42:39Z",
       "version": "2.6.2"
     }
   },
@@ -188,7 +213,7 @@
       "sha256": "1be31df4cd310c048a6411a98e2f544753372f5c66eb73bb75dc3225bb1e36e5",
       "size": 103809024,
       "url": "https://github.com/PartialVolume/shredos.x86_64/releases/download/v2025.11_32_x86-64_0.43.1/shredos-2025.11_32_i686_v0.43.1_20261010_lite.iso",
-      "verified": "2026-11-26T13:18:40Z",
+      "verified": "2026-11-26T13:42:43Z",
       "version": "v2025.11_32_x86-64_0.43.1"
     }
   },
@@ -204,7 +229,7 @@
       "sha256": "c033bfc27c740b67155b6bf46e9453caa014116bb7bcfede9cbb4ae708e7e5c6",
       "size": 56559616,
       "url": "https://download.tuxfamily.org/slitaz/iso/rolling/slitaz-rolling.iso",
-      "verified": "2026-11-26T13:17:06Z",
+      "verified": "2026-11-26T13:42:00Z",
       "version": null
     }
   },
@@ -221,7 +246,7 @@
       "sha256": "b1a8731dd9c626cddb010c2ab45914db89e28225c8ac496d577bfe28988b0df8",
       "size": 97924607,
       "url": "https://downloads.sourceforge.net/project/supergrub2/2.06s4/super_grub2_disk_2.06s4.zip",
-      "verified": "2026-11-26T13:18:42Z",
+      "verified": "2026-11-26T13:42:53Z",
       "version": null
     }
   },
@@ -238,7 +263,7 @@
       "sha256": "13939fa339a099695b851b10df9082b313ae2ecdcab0cfa1c594cee476f69a1e",
       "size": 6513386,
       "url": "https://github.com/emukidid/swiss-gc/releases/download/v0.7.0/swiss_r2174.7z",
-      "verified": "2026-11-26T13:18:43Z",
+      "verified": "2026-11-26T13:42:53Z",
       "version": "v0.7.0"
     }
   },
@@ -254,7 +279,7 @@
       "sha256": "b71b98ba6b92145524cb1a72206b9888a59861ad6fb05d127faf618ca0136891",
       "size": 1434386432,
       "url": "https://downloads.sourceforge.net/project/systemrescuecd/sysresccd-x86/13.03/systemrescue-13.03-amd64.iso",
-      "verified": "2026-11-26T13:17:43Z",
+      "verified": "2026-11-26T13:42:20Z",
       "version": null
     }
   },
@@ -270,7 +295,7 @@
       "sha256": "f26ca71a1bb8534ebad65a5df844d6adc4aba7252910186bef8623d86855db08",
       "size": 25165824,
       "url": "http://tinycorelinux.net/16.x/x86/release/TinyCore-current.iso",
-      "verified": "2026-11-26T13:16:59Z",
+      "verified": "2026-11-26T13:41:52Z",
       "version": null
     }
   },
@@ -286,7 +311,7 @@
       "sha256": "189746859b539c37d978b107589610aa49a7415f7c089d22667867a918591013",
       "size": 674152448,
       "url": "https://old-releases.ubuntu.com/releases/4.10/warty-release-live-i386.iso",
-      "verified": "2026-11-26T13:13:30Z",
+      "verified": "2026-11-26T13:29:45Z",
       "version": null
     }
   },
@@ -302,7 +327,7 @@
       "sha256": "4eb6c5d66972670f784d6f25d336017b5a85606fbad86b0c7abd67a5d5865391",
       "size": 732336128,
       "url": "https://old-releases.ubuntu.com/releases/dapper/ubuntu-6.06.1-desktop-i386.iso",
-      "verified": "2026-11-26T13:13:38Z",
+      "verified": "2026-11-26T13:29:52Z",
       "version": null
     }
   },
@@ -322,7 +347,7 @@
       "sha256": "e40d8024d033ba073f76d8177ab0df952cd8950cc07cb70f701613a75d41a37d",
       "size": 33034299,
       "url": "https://github.com/JonathanDotCel/unirom8_bootdisc_and_firmware_for_ps1/releases/download/8.0.K/UNIROM_BOOTDISC_8.0.K.zip",
-      "verified": "2026-11-26T13:18:44Z",
+      "verified": "2026-11-26T13:42:54Z",
       "version": "8.0.K"
     }
   },
@@ -333,7 +358,7 @@
       "sha256": "83e3fa9e18fd715c9617125d674b4b965eddff2ee8c54f11394c0bbc04a421a2",
       "size": 11160243,
       "url": "https://github.com/wiidev/usbloadergx/releases/download/v4.0-r1283/usbloadergx_r1283.zip",
-      "verified": "2026-11-26T13:18:45Z",
+      "verified": "2026-11-26T13:42:55Z",
       "version": "v4.0-r1283"
     }
   }
